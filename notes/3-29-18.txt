@@ -1,8 +1,0 @@
-Set up intial github repos
-
-project
-Use Vagrant/Ansible for standin up a Ubuntu VM with Ansible playbook.
-It would install most of the tools we coverd in class.
-
-Began powerpoint for project
-

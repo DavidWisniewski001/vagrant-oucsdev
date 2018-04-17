@@ -1,9 +1,0 @@
-
-New apps:
-Added task for installing doxygen
-Added task for installing valgrind
-Added task to change welcome message for the VM
-
-merged all branches togeather
-
-began descussion on a license to use.
