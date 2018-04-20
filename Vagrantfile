@@ -6,13 +6,15 @@ Vagrant.configure("2") do |config|
   # Ubuntu 16.04 was selected to be consistent with the current lab environment.
   config.vm.box = "bento/ubuntu-16.04"
   config.vm.define "oucsdev" do |oucsdev|
-  # I was thinking I could just change this and everything wold work... I was wrong
 
-  config.vm.provider "virtualbox" do |v|
+  oucsdev.vm.provider "virtualbox" do |v|
   # To configure your memory and cpus you can just input them here
   v.memory = 1024
   v.cpus = 2
   end
+
+
+
     oucsdev.vm.hostname = "oucsdev"
     oucsdev.vm.provision "ansible_local" do |ansible|
       ansible.playbook = "provisioning/playbook.yml"
